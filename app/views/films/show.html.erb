@@ -1,0 +1,25 @@
+<% provide(:title, @film.title) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>Details</h1>
+      <table>
+        <tr>
+          <th>Title</th＞
+          <td><%= @film.title %></td>
+        </tr>
+        <tr>
+          <th>Year</th>
+          <td><%= @film.year %></td>
+        </tr>
+        <tr>
+          <th>Director</th>
+          <td><%= @film.director %></td>
+        </tr>
+          </table>
+      <li><%= link_to "Edit", edit_film_path %></li>
+      <%= link_to "delete", @film, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+    </section>
+  </aside>
+</div>

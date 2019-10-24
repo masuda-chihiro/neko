@@ -1,8 +1,15 @@
 <% provide(:title, "") %>
 <div class="center jumbotron">
+<% if logged_in? %>
+<h1>Tell me your favorite films!!★</h>
+<li><%= link_to "List", list_path %></li>
+<li><%= link_to "Add", register_path %></li>
+<% else %>
 <h1>Welcome to the Film Shelf</h1>
     <h2>Welcome to my website!!</h2>
     <p>Enjoy sharing your favorite films with all other users!!★</p>
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
+
 </div>
