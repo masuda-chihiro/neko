@@ -16,7 +16,8 @@
           <th>Director</th>
           <td><%= @film.director %></td>
         </tr>
-          </table>
+      </table>
+
       <li><%= link_to "Edit", edit_film_path %></li>
       <%= link_to "delete", @film, method: :delete,
                                   data: { confirm: "You sure?" } %>

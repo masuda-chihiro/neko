@@ -1,5 +1,5 @@
 class FilmsController < ApplicationController
- before_action :login_user
+ before_action :login_user 
   def new
     @film = Film.new
   end

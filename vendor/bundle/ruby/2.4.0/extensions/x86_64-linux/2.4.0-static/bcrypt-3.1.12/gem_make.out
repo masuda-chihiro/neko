@@ -1,0 +1,19 @@
+current directory: /home/vagrant/environment/film_app/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.12/ext/mri
+/usr/local/rbenv/versions/2.4.4/bin/ruby -I /usr/local/rbenv/versions/2.4.4/lib/ruby/site_ruby/2.4.0 -r ./siteconf20191024-13786-ijjn69.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/environment/film_app/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/environment/film_app/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/vagrant/environment/film_app/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20191024-13786-1n5lgql
